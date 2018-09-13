@@ -65,7 +65,7 @@ public class PhotoActivity extends AppCompatActivity {
         sumValue = findViewById(R.id.sumValue);
         companyName = findViewById(R.id.companyName);
         NIP = findViewById(R.id.NIP);
-        date = findViewById(R.id.date);
+        date = findViewById(R.id.tdate);
         Vat = findViewById(R.id.VatValue);
         Netto = findViewById(R.id.NettoValue);
         invoiceFor = findViewById(R.id.invoiceFor);

@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".Menu">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FactureReader"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="247dp"
+        android:text="@string/app_name"
         android:textSize="30sp"
-        />
-    <RelativeLayout
-        android:layout_weight="0.5"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-             <Button
-                 android:id="@+id/scanerButton"
-                 android:text="SCANER"
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent" />
-    </RelativeLayout>
+        app:layout_constraintBottom_toTopOf="@+id/photoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-<RelativeLayout
-    android:layout_weight="0.45"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/scanerButton"
+        android:layout_width="0dp"
+        android:layout_height="248dp"
+        android:text="@string/scanner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
 
     <Button
         android:id="@+id/photoButton"
-        android:text="PHOTO"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
 
 
-</RelativeLayout>
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

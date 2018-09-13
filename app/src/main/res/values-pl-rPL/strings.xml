@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FactureReader</string>
+    <string name="Company">Firma</string>
+    <string name="NIP">NIP</string>
+    <string name="noText">Brak tekstu</string>
+    <string name="state">0/9</string>
+    <string name="stationName">Nazwa stacji</string>
+    <string name="invoiceNum">Numer faktury</string>
+    <string name="gross">Brutto</string>
+    <string name="companyName">Nazwa firmy</string>
+    <string name="dateNum">Data / Nr wydruku</string>
+    <string name="vat">VAT</string>
+    <string name="net">Netto</string>
+    <string name="invoiceDesc">Faktura za</string>
+    <string name="scanner">Skaner</string>
+    <string name="photo">Zdjęcie</string>
+    <string name="station">Stacja</string>
+    <string name="exportCsv">Eksportuj</string>
+    <string name="invoiceReading">Czytanie faktury&#8230;</string>
+    <string name="testHint">" "</string>
+</resources>
