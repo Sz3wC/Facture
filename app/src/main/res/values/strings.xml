@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FactureReader</string>
+    <string name="Company">Firma/Company</string>
+    <string name="NIP">NIP</string>
+
+</resources>

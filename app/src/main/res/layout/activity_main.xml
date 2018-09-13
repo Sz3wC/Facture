@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No text"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <SurfaceView
+        android:id="@+id/surface_viev"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="541dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20dp"
+        android:text="0/9" />
+    <TextView
+        android:id="@+id/NazwaStacjiNoFound"
+        android:layout_below="@id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Nazwa stacji"
+        />
+    <TextView
+        android:id="@+id/NumerFakturyNoFound"
+        android:layout_below="@id/NazwaStacjiNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Nr faktury"
+        />
+    <TextView
+        android:id="@+id/SumaNoFound"
+        android:layout_below="@id/NumerFakturyNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Brutto"
+        />
+    <TextView
+        android:id="@+id/FirmaNoFound"
+        android:layout_below="@id/SumaNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Nazwa firmy"
+        />
+    <TextView
+        android:id="@+id/NIPnoFound"
+        android:layout_below="@id/FirmaNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/NIP"
+        />
+    <TextView
+        android:id="@+id/DataNrWydrukuNoFound"
+        android:layout_below="@id/NIPnoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Data/Nr wydruku"
+        />
+
+    <TextView
+        android:id="@+id/VATNoFound"
+        android:layout_below="@id/DataNrWydrukuNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="VAT"
+        />
+    <TextView
+        android:id="@+id/NettoNoFound"
+        android:layout_below="@id/VATNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Netto"
+        />
+    <TextView
+        android:id="@+id/ZaCoNoFound"
+        android:layout_below="@id/NettoNoFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="Faktura za"
+        />
+
+</RelativeLayout>
