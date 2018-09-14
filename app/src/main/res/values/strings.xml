@@ -1,6 +1,25 @@
 <resources>
     <string name="app_name">FactureReader</string>
-    <string name="Company">Firma/Company</string>
+    <string name="Company">Company</string>
     <string name="NIP">NIP</string>
+    <string name="noText">No text</string>
+    <string name="state">0/9</string>
+    <string name="stationName">Station name</string>
+    <string name="invoiceNum">Invoice number</string>
+    <string name="gross">Gross</string>
+    <string name="companyName">Company name</string>
+    <string name="dateNum">Date/printout number</string>
+    <string name="vat">VAT</string>
+    <string name="net">Net</string>
+    <string name="invoiceDesc">Invoice desc.</string>
+
+    <string name="scanner">SCANNER</string>
+    <string name="photo">PHOTO</string>
+
+    <string name="station">Station</string>
+    <string name="exportCsv">Export to Excel</string>
+    <string name="invoiceReading">Invoice reading&#8230;</string>
+
+    <string name="testHint"> </string>
 
 </resources>

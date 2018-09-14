@@ -1,167 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhotoActivity">
-
+    tools:context=".PhotoActivity"
+    android:id="@+id/relativeLayout2">
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stacja"
-        android:layout_centerHorizontal="true"
-
-        />
+        android:text="@string/station"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/stationName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/text1"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nr faktury"
-        android:layout_below="@id/stationName"
-        android:layout_centerHorizontal="true"
-        />
+        android:text="@string/invoiceNum"
+        app:layout_constraintTop_toBottomOf="@id/stationName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/factureName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text2"
-        android:layout_centerHorizontal="true"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/text9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Faktura za"
-        android:layout_below="@id/factureName"
-        android:layout_centerHorizontal="true"
-        />
+        android:text="@string/invoiceDesc"
+        app:layout_constraintTop_toBottomOf="@id/factureName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/invoiceFor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text9"
-        android:layout_centerHorizontal="true"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/text9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Brutto"
-        android:layout_below="@id/invoiceFor"
-        android:layout_alignParentRight="true"
-        />
+        android:text="@string/gross"
+        app:layout_constraintTop_toBottomOf="@id/invoiceFor"
+        app:layout_constraintRight_toRightOf="parent" />
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/sumValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/text"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintRight_toRightOf="parent" />
     <TextView
         android:id="@+id/text7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VAT"
-        android:layout_below="@id/invoiceFor"
-        android:layout_centerHorizontal="true"
-        />
+        android:text="@string/vat"
+        app:layout_constraintTop_toBottomOf="@id/invoiceFor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/VatValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/text"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <TextView
         android:id="@+id/text8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Netto"
-        android:layout_below="@id/invoiceFor"
-        android:layout_alignParentLeft="true"
-        />
+        android:text="@string/net"
+        app:layout_constraintTop_toBottomOf="@id/invoiceFor"
+        app:layout_constraintLeft_toLeftOf="parent" />
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/NettoValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/text"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintLeft_toLeftOf="parent" />
     <TextView
         android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Firma"
-        android:layout_below="@id/sumValue"
-        android:layout_centerHorizontal="true"
-        />
+        android:text="@string/Company"
+        app:layout_constraintTop_toBottomOf="@id/sumValue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/companyName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/text4"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/text4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <TextView
         android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NIP"
-        android:layout_below="@id/companyName"
-        android:layout_centerHorizontal="true"
-        />
+        android:text="@string/NIP"
+        app:layout_constraintTop_toBottomOf="@id/companyName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <EditText
+        android:hint="@string/testHint"
+        android:inputType="text"
         android:id="@+id/NIP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/text5"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/text5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <TextView
         android:id="@+id/text6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Data/Nr wydruku"
-        android:layout_below="@id/NIP"
-        android:layout_centerHorizontal="true"
-        />
+        android:text="@string/dateNum"
+        app:layout_constraintTop_toBottomOf="@id/NIP"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <EditText
-        android:id="@+id/date"
+        android:hint="@string/testHint"
+        android:inputType="text"
+        android:id="@+id/tdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/text6"
-        android:text="" />
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/text6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <Button
         android:id="@+id/saveToFile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/date"
-        android:text="EXPORT TO EXCEL"
-        />
+        android:text="@string/exportCsv"
+        app:layout_constraintTop_toBottomOf="@id/tdate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
     <TextView
-        android:text="Trwa czytanie faktury...."
+        android:text="@string/invoiceReading"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/readFacture"
-        android:layout_below="@+id/saveToFile2"
-        />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
